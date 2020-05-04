@@ -12,7 +12,6 @@ class App < Sinatra::Base
       # data manipulation pass from params
       @team = params[:team]
       @heroes = params[:team][:heroes]
-      binding.pry
       erb :"../views/team"
     end
 end
