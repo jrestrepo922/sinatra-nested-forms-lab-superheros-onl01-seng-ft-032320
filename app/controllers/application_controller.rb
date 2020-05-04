@@ -10,11 +10,10 @@ class App < Sinatra::Base
 
     post "/teams" do
       # data manipulation pass from params
-      binding.pry
+
       @team = params[:team]
-
-      @heroes = params[:team][:heroes].each do
-
+      @heroes = params[:team][:heroes]
+      binding.pry
       end
       erb :"../views/team"
     end
