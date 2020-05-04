@@ -6,11 +6,11 @@ class App < Sinatra::Base
 
     get "/" do
 
-      erb :new
+      erb :"../views/super_hero"
     end
 
     post "/teams" do
       # data manipulation pass from params
-      erb :show
+      erb :"../views/team"
     end
 end
