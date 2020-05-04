@@ -10,7 +10,7 @@ class App < Sinatra::Base
     end
 
     post '/teams' do
-
+      # data manipulation pass from params
       erb :show
     end
 end
